@@ -13,4 +13,4 @@ Run below URLs in your browser and check the logs in your terminal for both poin
 * http://localhost:5000/socket_mqtt_notification/222
 * http://localhost:5000/socket_mqtt_notification/333
 
-For more information on clustering and sockets you can go through this **Medium Article** :- https://medium.com/p/d5be72ef65f0
+For more information on clustering and sockets you can go through this **Medium Article** :- https://medium.com/@jadejayashraj/node-js-cluster-with-mqtt-socket-io-redis-and-sticky-sessions-d5be72ef65f0

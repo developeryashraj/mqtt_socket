@@ -1,0 +1,15 @@
+Below are the links which is useful during the RND.
+
+- https://nodejs.org/api/cluster.html
+- https://stackoverflow.com/questions/18310635/scaling-socket-io-to-multiple-node-js-processes-using-cluster
+- https://www.npmjs.com/package/socket.io-redis
+- https://github.com/socketio/socket.io-redis
+- https://www.npmjs.com/package/sticky-session
+- http://maxprog.net.pl/node-js/socket-io-on-node-js-cluster-a-simply-way-to-performance/
+- https://socket.io/docs/using-multiple-nodes/
+- https://socket.io/docs/rooms-and-namespaces/
+
+MQTT
+
+- https://www.npmjs.com/package/mosca
+- https://github.com/mcollina/ascoltatori
