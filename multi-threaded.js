@@ -51,7 +51,7 @@ if (cluster.isWorker) {
       socket.join(socket.handshake.query.token);
     }
     socket.emit('data', 'connected to worker: ' + cluster.worker.id);
-    
+
     socket.on('disconnect', function () { //Each socket also fires a special disconnect event:
       // console.log("disconnect", socket.id);
       console.log("disconnect", socket.handshake.query.token);
@@ -73,6 +73,7 @@ if (cluster.isWorker) {
     }
   };
 
+  //https://github.com/mcollina/ascoltatori
   var ascoltatore = {
     type: 'redis',
     redis: require('redis'),
@@ -150,14 +151,14 @@ if (cluster.isWorker) {
       qos: 1, // 0, 1, or 2
       retain: false // or true
     };
-    console.log("mqtt publish on worker :- ",cluster.worker.id);
+    console.log("mqtt publish on worker :- ", cluster.worker.id);
     mqttServer.publish(message, function () {
       // console.log('publish done!',message);
     });
   };
 
   let SocketPublishIO = function (topic_or_room, data) {
-    console.log("socket publish on worker :- ",cluster.worker.id);
+    console.log("socket publish on worker :- ", cluster.worker.id);
     // helpful url for redis adapter https://github.com/socketio/socket.io-redis
     io.in(topic_or_room).clients((err, clients) => {
       if (err) {
