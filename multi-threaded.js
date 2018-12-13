@@ -2,7 +2,6 @@ let mosca = require('mosca');
 var cluster = require('cluster');
 //const numCPUs = require('os').cpus().length;
 var sticky = require('sticky-session');
-let common = require('./server/common');
 let bodyParser = require('body-parser');
 var appPort = 5000;
 
