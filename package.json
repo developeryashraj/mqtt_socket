@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "MQTT Server",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dateformat": "^3.0.2",
+    "express": "^4.15.2",
+    "mosca": "^2.7.0",
+    "mysql": "^2.15.0",
+    "request": "^2.83.0",
+    "socket.io": "^2.2.0",
+    "socket.io-redis": "^5.2.0",
+    "sticky-session": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "author": "Yashrajsinh Jadeja",
+  "license": "ISC"
+}
